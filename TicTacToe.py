@@ -1,15 +1,13 @@
 import pygame ,sys 
 import numpy as np
 
-width = 600
-height = 600
+width = 700
+height = 700
 line_width = 15
 win_line_width = 15
 board_rows = 3
 board_cols = 3
-square_size = 200
-circle_radius = 60
-circle_width = 15
+square_size = 235
 cross_width = 25
 space = 55
 
@@ -35,7 +33,7 @@ def draw_figures():
     for row in range(board_rows) :
         for col in range(board_cols) : 
             if board[row][col] == 1:
-                pygame.draw.circle(screen , circle_colour, (int(col * square_size + square_size//2), int(row * square_size + square_size//2)), circle_radius, circle_width)
+                pygame.draw.circle(screen , circle_colour, (int(col * square_size + square_size//2), int(row * square_size + square_size//2)), 60, 15)
             elif board[row][col] == 2:
                 pygame.draw.line( screen, cross_colour, (col * square_size + space, row * square_size + square_size - space), (col * square_size + square_size - space, row * square_size + space), cross_width)
                 pygame.draw.line( screen, cross_colour, (col * square_size + space, row * square_size + space), (col * square_size + square_size - space, row * square_size + square_size - space), cross_width)
