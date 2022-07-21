@@ -1,5 +1,6 @@
 import pygame ,sys 
 import numpy as np
+pygame.init()
 
 width = 700
 height = 700
