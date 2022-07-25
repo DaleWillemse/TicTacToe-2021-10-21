@@ -21,6 +21,7 @@ screen = pygame.display.set_mode((width, height))
 pygame.display.set_caption("Tic Tac Toe")
 screen.fill(bg_colour)
 
+# Using numpy grid to create the board.
 board = np.zeros((board_rows, board_cols))
 
 def draw_lines():
